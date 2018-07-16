@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Story</title>
+		<link rel="stylesheet" href="master.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	</head>
+	<body>
+	<div class="dropdown">
+		  <a href="index.html">Home</a>
+		  <a href="index.html#jump">Our Services</a>
+		  <a href="story.html">Our Story</a>
+		  <a href="https://www.google.com/maps">Our Location</a>
+		  <a href="#">Contact Us</a>
+          </div>
+		<div class="nav scroll">
+		<h1>Dan's Turkish Barber</h1>
+		<div class="btns">
+			<a href="index.html">Home</a>
+			<a href="index.html#jump" id="serbtn">Our Services</a>
+			<a href="#">Our Story</a>
+			<a href="https://www.google.com/maps">Our Location</a>
+			<a href="#" style="color:white;" class="active">Contact Us</a>
+		</div>
+		<a id="ham"><i class="fas fa-bars"></i></a>
+		</div>
+		<div class="story-container">
+			<img src="dan.jpg" alt=""/>
+			<h1>Our Story</h1>
+			<p id="sct-p">Lorem lipsum dolor ullamco ipsum dolor ullamco aboris nisi ea commodo.</p>
+			<div class="sline"></div>
+			<div class="sc-holder">
+			<h2>Welcome</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h2>Our Journey</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	<style type="text/css" media="screen">
+		.nav h1{
+			color:#3a3a3a;
+		}
+		.nav #ham{
+			color:black;
+		}
+		.nav .btns a{
+			color:#7c7c81;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+         $(document).ready(function(){
+		 $(".dropdown").hide();
+		 $("#ham").click(function() {
+			 $(".dropdown").slideToggle(100);
+		 });
+		$('.story-container:not(#ham)').click(function(){
+			 $(".dropdown").slideUp(100);
+		});
+         });
+ </script>
+	</body>
+</html>

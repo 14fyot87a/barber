@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="master.css" type="text/css" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div class="dropdown">
+			<a href="index.html">Home</a>
+			<a href="#" id="servicesbtn">Our Services</a>
+			<a href="story.html">Our Story</a>
+			<a href="https://www.google.com/maps">Our Location</a>
+			<a href="#">Contact Us</a>
+	</div>
+	<div class="nav">
+		<h1>Dan's Turkish Barber</h1>
+		<div class="btns">
+			<a href="index.html">Home</a>
+			<a href="#" id="serbtn">Our Services</a>
+			<a href="story.html">Our Story</a>
+			<a href="https://www.google.com/maps">Our Location</a>
+			<a href="#" class="active">Contact Us</a>
+		</div>
+		<a id="ham"><i class="fas fa-bars"></i></a>
+	</div>
+	<div class="back">
+			<div class="content">
+				<h1>Dan's Turkish Barber</h1>
+				<p>Traditional Gentle Man's Barber Shop</p>
+				<a href="#">Contact Us</a>
+			</div>
+			<img src="down.png" alt=""/>
+		</div>
+		<div class="tiles">
+			<div class="container-tile">
+				<div class="tile-img">
+					<div class="img-holder">
+						<img src="placeholder.png" alt=""/>
+					</div>
+				</div>
+				<div class="tile-content">
+					<div class="tile-holder">
+						<h1>Location</h1>
+						<div class="line"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+t ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq
+uat.</p>
+						<a href="https://www.google.com/maps">View On Map</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-tile">
+				<div class="tile-content">
+					<div class="tile-holder">
+						<h1>Our Story</h1>
+						<div class="line"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+t ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq
+uat.</p>
+						<a href="story.html">Read More</a>
+					</div>
+				</div>
+				<div class="tile-img" style="background-image:url('story.png');">
+					<div class="img-holder">
+						<img src="liftoff.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="services" id="jump">
+			<h1>Our Services</h1>
+			<p id="para">Lorem ipsuectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="tiled-container">
+				<div class="service">
+					<img src="scissors2.png" alt=""/>
+					<h2>Men's Cut</h2>
+					<h1>$50</h1>
+					<div class="nline"></div>
+					<p>ctetur adipiscing elit, e et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="service">
+					<img src="scissors.png" alt=""/>
+					<h2>Boys Cut</h2>
+					<h1>$30</h1>
+					<div class="nline"></div>
+					<p>ctetur adipiscing elit, e et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="service">
+					<img src="shave.png" alt=""/>
+					<h2>Full Shave</h2>
+					<h1>$45</h1>
+					<div class="nline"></div>
+					<p>ctetur adipiscing elit, e et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="service">
+					<img src="elshave.png" alt=""/>
+					<h2>Beard Trim</h2>
+					<h1>$35</h1>
+					<div class="nline"></div>
+					<p>ctetur adipiscing elit, e et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+				<a href="#">View More</a>
+		</div>
+		<div class="contact-sec">
+			<h1>Book An Appointment</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing eliti ut aliquip ex ea commodo consequat.</p>
+			<a href="#">Book Now</a>
+		</div>
+		<p class="madeby">Web Design By Sam @ Wishing Well Developments</p>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".dropdown").hide();
+		$(window).scroll(function(){
+			if($(window).scrollTop() >= 100){
+				$('.nav').addClass('scroll');
+				$('.btns a').css('color', '#7c7c81');
+				$('.nav h1').css('color', '#3a3a3a');
+				$('#ham').css('color', '#3a3a3a');
+				$('.active').css('color', 'white');
+
+			}else{
+				$('.nav').removeClass('scroll');
+				$('#hair').css('width', '80px');
+				$('.btns a').css('color', 'white');
+				$('.nav h1').css('color', 'white');
+				$('#ham').css('color', 'white');
+			}
+		});
+	$("#ham").click(function() {
+		$(".dropdown").slideToggle(100);
+	});
+	$("#serbtn").click(function() {
+		$([document.documentElement, document.body]).animate({
+		scrollTop: $(".services").offset().top
+		}, 750);
+	});
+	$(".active").click(function() {
+		$([document.documentElement, document.body]).animate({
+		scrollTop: $(".contact-sec").offset().top
+		}, 750);
+	});
+	});
+</script>
+</html>
